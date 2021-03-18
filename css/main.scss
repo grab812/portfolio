@@ -1,0 +1,210 @@
+@charset 'utf-8';
+
+$screenW : 320;
+$module-interval : 10px;
+$color-white : #ffffff;
+$color-gray : #f5f5f5;
+$color-black : #000000;
+
+// font
+@mixin font-xsm {
+    font-size: 0.625rem;
+    line-height: 0.75rem;
+    font-weight: 500;
+}
+@mixin font-sm {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 500;
+}
+@mixin font-basic {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+}
+@mixin font-lg {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+@mixin font-xlg {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+}
+
+// hidden 
+@mixin hidden {
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+}
+
+// lineCamp
+@mixin text-line {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+@mixin text-line-3 {
+    @include text-line();
+    -webkit-line-clamp: 3;
+}
+@mixin text-line-4 {
+    @include text-line();
+    -webkit-line-clamp: 4;
+}
+@mixin text-line-5 {
+    @include text-line();
+    -webkit-line-clamp: 5;
+}
+
+@function vw($px, $view:$screenW) {
+  @return #{($px / $view ) * 100}vw;
+}
+@function viewRatio16-9H($w){
+  @return (9*$w) / 16;
+}
+@function viewRatio16-9W($h){
+  @return (16*$h) / 9;
+}
+
+//16:9 화면 비 공식 높이를 구할 경우 넓이를 입력
+// 넓이를 구할 경우 높이를 입역
+@function viewRatio16-9($dir, $value){
+  $result : 0;
+
+  @if($dir == 'h'){
+    $result : viewRatio16-9H($value);
+  }
+  @else {
+    $result : viewRatio16-9W($value);
+  }
+
+  @return $result;
+}
+
+#rameee {
+    margin: 20px auto;
+    width: 1280px;
+}
+
+.broad-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: 0 -#{$module-interval};
+    .item {
+        position: relative;
+        margin: 10px 0;
+        flex-basis: 20%;
+        overflow: hidden;
+        .wrap {
+            position: relative;
+            margin: 0 auto;
+            width: calc(100% - #{$module-interval}*2);
+        }
+        a {
+            display: block;
+            width: 100%;
+            height: 0;
+            padding-bottom: 141.66%;
+            &:hover {
+                figcaption {
+                    opacity: 1;
+                    visibility: visible;
+                    bottom: 0;
+                }
+            }
+            figure {
+                position: relative;
+                margin: 0;
+                // background-color: $color-gray;
+            }
+            img {
+                width: 100%;
+            }
+            figcaption {
+                @include font-basic();
+                position: absolute;
+                width: 100%;
+                padding: 10px;
+                text-align: center;
+                color: $color-gray;
+                background-color: rgba($color: #000000, $alpha: .5);
+                box-sizing: border-box;
+
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.35s cubic-bezier(0.54, 0.2, 0, 0.78);
+                bottom: -100%;
+            }
+        }
+        .item_detail {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            z-index: 500;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 1px solid #e0e0e0;
+            padding: 50px 20px;
+            background: rgba(255,255,255,0.85);
+            box-sizing: border-box;
+            transition: all 0.6s ease;
+            &.is-active {
+                opacity: 1;
+                visibility: visible;
+            }
+            strong {
+                @include font-xlg;
+                .genre {
+                    @include font-xsm();
+                    margin-left: 5px;
+                    padding: 2px 4px 3px;
+                    border-radius: 5px;
+                    background-color: brown;
+                    color: $color-white;
+                }
+            }
+            .info {
+                @include font-sm;
+                @include text-line-5;
+                line-height: 1.125rem;
+                color: $color-black;
+            }
+            .date {
+                padding: 10px 0;
+            }
+            .detail-close-btn {
+                @include hidden;
+                position: absolute;
+                top: 22px;
+                right: 15px;
+                width: 18px;
+                height: 18px;
+                background-color: transparent;
+                &::before, &::after {
+                    position: absolute;
+                    top: 0;
+                    left: 8px;
+                    content: '';
+                    height: 18px;
+                    width: 2px;
+                    background-color: $color-black;
+                }
+                &::before {
+                    transform: rotate(45deg);
+                }
+                &::after {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}
