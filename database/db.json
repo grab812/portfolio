@@ -1,0 +1,94 @@
+{
+    "movies": [
+      {
+        "id": "movie-1",
+        "detail": {
+          "desc": "조직의 배신으로 한국으로 오게 된 이탈리아 마피아 변호사가 베테랑 독종 변호사와 함께 악당의 방식으로 악당을 쓸어버리는 이야기",
+          "genre": "drama",
+          "info": "매주 (토,일) 밤 9시 방송",
+          "ko": "빈센조"
+        },
+        "figure": {
+          "height": 295,
+          "name": "빈센조",
+          "src": "http://img.lifestyler.co.kr/uploads/program/2/2247/skin/f132557590622320827(0).jpg",
+          "width": 204
+        }
+      },
+      {
+        "id": "movie-2",
+        "detail": {
+          "desc": "자타 공인 바른 청년이자 동네 순경인 정바름과 어린 시절 살인마에게 부모를 잃고 복수를 향해 달려온 무법 형사 고무치가 사이코패스 중 상위 1퍼센트로 불리는 가장 악랄한 프레데터와 대치 끝, 운명이 송두리째 뒤바뀌는 모습을 그려낸 본격 인간 헌터 추적극",
+          "genre": "drama",
+          "info": "매주 (수,목) 밤 10시 30분 방송",
+          "ko": "마우스"
+        },
+        "figure": {
+          "height": 295,
+          "name": "마우스",
+          "src": "http://img.lifestyler.co.kr/uploads/program/2/2246/skin/f132567919128191419(0).jpg",
+          "width": 204
+        }
+      },
+      {
+        "id": "movie-3",
+        "detail": {
+          "desc": "나이 일흔에 발레를 시작한 덕출과 스물셋 꿈 앞에서 방황하는 발레리노 채록의 성장 드라마",
+          "genre": "drama",
+          "info": "3/22 (월) 밤 9시 첫 방송",
+          "ko": "나빌레라"
+        },
+        "figure": {
+          "height": 295,
+          "name": "나빌레라",
+          "src": "http://img.lifestyler.co.kr/uploads/program/2/2241/skin/f132581005046947469(0).jpg",
+          "width": 204
+        }
+      },
+      {
+        "id": "movie-4",
+        "detail": {
+          "desc": "어디서도 본 적 없는 스타들의 '일'과 '일상' 속 진솔한 이야기! '진짜 나'를 보여주는 곳, 사적 모임 [온앤오프]에 당신을 초대합니다!",
+          "genre": "entertainment",
+          "info": "매주 (화) 밤 10시 30분 방송",
+          "ko": "온앤오프"
+        },
+        "figure": {
+          "height": 295,
+          "name": "온앤오프",
+          "src": "http://img.lifestyler.co.kr/uploads/program/2/2128/skin/f132574274065953440(0).jpg",
+          "width": 204
+        }
+      },
+      {
+        "id": "movie-5",
+        "detail": {
+          "desc": "그 겨울, '어쩌다' 사장이 됐다?! 시골 가게를 덜컥 맡게된 도시남자 차태현x조인성의 시골슈퍼 영업일지",
+          "genre": "entertainment",
+          "info": "매주 (목) 저녁 8시 40분 방송",
+          "ko": "어쩌다 사장"
+        },
+        "figure": {
+          "height": 295,
+          "name": "어쩌다 사장",
+          "src": "http://img.lifestyler.co.kr/uploads/program/2/2249/skin/f132593105183859213(0).jpg",
+          "width": 204
+        }
+      },
+      {
+        "id": "movie-6",
+        "detail": {
+          "desc": "큰 자기 유재석과 아기자기 조세호의 자기들 마음대로 떠나는 사람 여행!",
+          "genre": "entertainment",
+          "info": "매주 (수) 저녁 8시 40분 방송",
+          "ko": "유 퀴즈 온 더 블럭"
+        },
+        "figure": {
+          "height": 295,
+          "name": "유 퀴즈 온 더 블럭",
+          "src": "http://img.lifestyler.co.kr/uploads//program/1/1786/skin/f132283080141023426(0).jpg",
+          "width": 204
+        }
+      }
+    ]
+  }

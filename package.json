@@ -1,0 +1,21 @@
+{
+  "name": "drama",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx serve",  
+    "dev": "json-server --watch database/db.json"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grab812/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grab812/portfolio/issues"
+  },
+  "homepage": "https://github.com/grab812/portfolio#readme"
+}
