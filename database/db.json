@@ -89,6 +89,21 @@
           "src": "http://img.lifestyler.co.kr/uploads//program/1/1786/skin/f132283080141023426(0).jpg",
           "width": 204
         }
-      }
+      },
+      {
+        "id": "movie-7",
+        "detail": {
+        "desc": "깊은 세월과 자연이 어우러진 한옥에서 정갈한 한식을 맛보고, 다채로운 즐거움을 누리며, 고택의 낭만을 느끼는 시간! 오롯한 쉼을 전달하는, 사장님 마음 담아 [윤스테이]",
+        "genre": "entertainment",
+        "info": "매주 (금) 밤 9시 방송",
+        "ko": "윤스테이"
+        },
+        "figure": {
+        "height": 295,
+        "name": "윤스테이",
+        "src": "http://img.lifestyler.co.kr/uploads/program/2/2240/skin/f132544809232398684(0).jpg",
+        "width": 204
+        }
+        }
     ]
-  }
+}
